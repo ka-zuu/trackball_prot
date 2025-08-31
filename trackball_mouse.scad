@@ -181,7 +181,7 @@ module bottom_case() {
 //-------------------------------------------------
 // To render a part, define the 'part' variable, e.g., using the command line:
 // openscad -o top_case.stl -D "part=\"top_case\"" trackball_mouse.scad
-if (is_def(part)) {
+if (defined(part)) {
     if (part == "top_case") {
         top_case();
     } else if (part == "bottom_case") {
